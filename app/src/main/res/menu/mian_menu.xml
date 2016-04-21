@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_record"
+            android:checked="true"
+            android:icon="@mipmap/menu_home"
+            android:title="@string/menu_record" />
+
+        <item
+            android:id="@+id/menu_my"
+            android:checked="true"
+            android:icon="@mipmap/menu_my"
+            android:title="@string/menu_my" />
+
+        <item
+            android:id="@+id/menu_collect"
+            android:checked="true"
+            android:icon="@mipmap/menu_collect"
+            android:title="@string/menu_collect" />
+
+        <item
+            android:id="@+id/menu_set"
+            android:checked="true"
+            android:icon="@mipmap/menu_set"
+            android:title="@string/menu_set" />
+
+    </group>
+</menu>

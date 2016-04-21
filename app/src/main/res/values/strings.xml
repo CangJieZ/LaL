@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">LaL</string>
+    <string name="app_name">录啊录</string>
+    <string name="menu_record">录音</string>
+    <string name="menu_my">我的</string>
+    <string name="menu_collect">收藏</string>
+    <string name="menu_set">设置</string>
 </resources>
