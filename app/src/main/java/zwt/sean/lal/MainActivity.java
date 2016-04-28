@@ -1,12 +1,10 @@
 package zwt.sean.lal;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
@@ -19,7 +17,7 @@ import android.widget.FrameLayout;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import zwt.sean.lal.main.RecordFragment;
+import zwt.sean.lal.module.main.RecordFragment;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -85,5 +83,4 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.mian_content, recordFragment);
         fragmentTransaction.commit();
     }
-
 }
