@@ -7,4 +7,5 @@
     <color name="header_bg">#9E9E9E</color>
     <color name="header_menu">#F5F5F5</color>
     <color name="header_text">#212121</color>
+    <color name="status_bar">#616161</color>
 </resources>

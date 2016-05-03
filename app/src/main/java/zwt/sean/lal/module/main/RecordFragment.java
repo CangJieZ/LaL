@@ -1,10 +1,11 @@
 package zwt.sean.lal.module.main;
 
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 
@@ -23,9 +24,11 @@ public class RecordFragment extends BaseFragment {
     RecyclerView mRecycle;
     @Bind(R.id.swipe)
     SwipeRefreshLayout mSwipe;
-    @Bind(R.id.record)
-    LinearLayout mRecord;
 
+    @Bind(R.id.record_btn)
+    FloatingActionButton mRecordBtn;
+    @Bind(R.id.main_coord)
+    CoordinatorLayout mMainCoord;
 
 
     private ArrayList<LalInfo> list;
@@ -66,11 +69,12 @@ public class RecordFragment extends BaseFragment {
         mAdapter.setOnItemClick(new OnRecycleClick() {
             @Override
             public void onItemClick(int position) {
-                Snackbar.make(mRecord, "点击了:"+position, Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(mMainCoord, "点击了:" + position, Snackbar.LENGTH_SHORT).show();
             }
         });
         mRecycle.setLayoutManager(new LinearLayoutManager(getActivity()));
         mRecycle.setAdapter(mAdapter);
+
 
         mSwipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -79,4 +83,9 @@ public class RecordFragment extends BaseFragment {
             }
         });
     }
+
+    @Override
+    public void initListener() {
+    }
+
 }

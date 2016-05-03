@@ -17,6 +17,7 @@ public abstract class BaseFragment extends Fragment{
 
     public abstract int setContentView();
     public abstract void onCreate();
+    public abstract void initListener();
 
     @Nullable
     @Override
@@ -31,6 +32,7 @@ public abstract class BaseFragment extends Fragment{
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         onCreate();
+        initListener();
     }
 
     @Override

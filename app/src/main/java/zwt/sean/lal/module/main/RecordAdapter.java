@@ -59,6 +59,7 @@ public class RecordAdapter extends RecyclerView.Adapter<RecordAdapter.RecordHold
 
         public RecordHolder(View itemView,OnRecycleClick click) {
             super(itemView);
+            itemView.setTag(getAdapterPosition());
             img = (ImageView) itemView.findViewById(R.id.img);
             name = (TextView) itemView.findViewById(R.id.name);
             mClick = click;

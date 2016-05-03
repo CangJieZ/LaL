@@ -13,8 +13,8 @@
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:foreground="?android:attr/selectableItemBackground">
-        card_view:cardCornerRadius="10dp"
-        card_view:cardElevation="24dp">
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="36dp">
 
         <LinearLayout
             android:layout_width="match_parent"
